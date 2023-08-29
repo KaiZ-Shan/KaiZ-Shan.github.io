@@ -1,14 +1,8 @@
-# KZHomePage
+# HomePage
 
-二次元卡片个人网站主页
+个人网站主页
 
-> QQ交流群：<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=-tso4BmPVXPSgqNjPhRCIg4GYZ8Llu_e&jump_from=webapi">962303102</a>
 
-## 使用文档
-
-<https://blog.170601.xyz/archives/25.html>
-
-## 使用方式
 
 ### 音乐配置
 使用前请填写head内的相关配置信息
@@ -26,6 +20,15 @@
     let music_autoplay = true; // 自动播放
     let music_loop = "all"; // 音频循环播放, 可选值: 'all', 'one', 'none'
 ```
+
+###配置导航按钮
+    data-href="//www.kezez.com"  // 要打开的链接
+    data-title="Blog"            // 标题
+    data-window="pop"            // 窗口模式，可选：pop(弹窗显示) current(当前页打开) newtab(新标签页打开)
+    data-anim="4"                // 窗口动画效果，可选值：1 2 3 4 5 6 具体效果可以手动尝试
+    data-area-w="80%"             // 窗口打开后所占的宽度
+    data-area-h="90%"            // 窗口打开后所占的高度
+    data-shade="false"           // 是否显示遮罩
 
 ### 按钮颜色
 
