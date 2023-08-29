@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 浏览器标签上显示的网站标题 -->
+    <title>KaiZs's Website</title>
+    <!-- 网站介绍 -->
+    <meta name="description" content="还在摸索实验中:>">
+    <!-- 网站关键字 -->
+    <meta name="keywords" content="个人主页">
+    <!-- 浏览器标签上显示的图标 -->
+    <link rel="icon" type="image/ico" href="//i0.hdslb.com/bfs/face/85b295ef066548bb1fd5589b6a608737dd7ecbc0.jpg">
+    <!-- 样式文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="./static/style.css?v=1.1">
+    <link rel="stylesheet" href="./static/APlayer-1.10.1/dist/APlayer.min.css">
+
+    <!-- 自定义设置 -->
+    <style>
+        body {
+            /*背景图片URL 可使用随机图片API */
+            background-image: url("https://w.wallhaven.cc/full/4x/wallhaven-4x37x3.jpg");
+        }
+
+        .photo-bg {
+            /* 卡片左侧图片 */
+            background-image: url("https://marketplace.canva.cn/IObik/MAEwnBIObik/1/s2/canva-book-and-flowers-on-green-fabric-flatlay-MAEwnBIObik.jpg");
+        }
+    </style>
+    <script>
+        // 音乐设置
+        let meting_music_api = "https://api.injahow.cn/meting/";// meting api
+        let music_server = "netease"; // 音乐服务：网易云 netease 参见 meting api支持的服务
+        let music_type = "song"; // 歌曲类型：歌单playlist 单首歌曲 song  专辑 album
+        let music_id = "29129889"; // 歌单ID或歌曲ID或者专辑ID 20173709 29732992
+        let music_order = "list"; // 音频循环顺序, 顺序播放： 'list', 随机播放：'random'
+        let music_mini = false; // mini模式 吸底模式开启后此选项实效 true / false
+        let music_fixed = false; // 吸底模式
+        let music_volume = 0.7; // 默认音量
+        let music_autoplay = true; // 自动播放
+        let music_loop = "all"; // 音频循环播放, 可选值: 'all', 'one', 'none' ，分别为全部循环，单曲循环，不循环
+        // TODO 一言设置
+    </script>
+    <!-- end 自定义设置 -->
+</head>
+
+<body>
+    <div id="main" class="container">
+        <div class="row my-card justify-content-center">
+            <div class="col-lg-4 photo-bg"></div>
+            <div class="col-lg-8 card">
+                <!-- 大标题 -->
+                <h1>KaiZs's Website</h1>
+                <!-- 标题下的一段话 -->
+                <p>
+                    很荣幸您能访问我的网站！网站现在还在摸索试验阶段，没有什么东西（或者说什么东西也没有）。目前我仍在努力学习中，励志向着目标前行。
+                </p>
+                <p id="hitokoto_text">:D 每日一言获取中...</p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- 导航按钮组 -->
+                        <button data-href="https://space.bilibili.com/426196413" data-title="Bilibili" data-window="newtab" data-anim="4"
+                            data-area-w="80%" data-area-h="90%" data-shade="false"
+                            class="kz-nav-btn btn btn-primary col-lg-4">Bilibili</button>
+
+                        <button data-href="https://www.douyin.com/user/MS4wLjABAAAAiMJAkbhS23YbMUD-Wq4vZq9ZruyDRKngOQEtrLCqOUcKSyf0BT45vCGovxqfsxLz" data-title="抖音" data-window="newtab"
+                            data-anim="4" data-area-w="80%" data-area-h="90%" data-shade="false"
+                            class="kz-nav-btn btn btn-secondary col-lg-4">抖音</button>
+
+                        <button data-href="https://mp.weixin.qq.com/mp/qrcode?scene=10000005&size=102&__biz=Mzg5MDkxMTc3OQ==&mid=2247483865&idx=1&sn=65f992cbfa289cd3ee60d06d35258f75&send_time="
+                            data-title="微信公众号" data-window="pop" data-anim="4" data-area-w="30%" data-area-h="40%"
+                            data-shade="false" class="kz-nav-btn btn btn-success col-lg-4">微信公众号</button>
+
+                        <!-- end 导航按钮组 -->
+                    </div>
+                </div>
+                <!-- aplayer inner -->
+                <div id="aplayer-inner" class="aplayer"></div>
+                <!-- end aplayer inner -->
+                <ul class="social mt-1">
+                </ul>
+
+                <footer>
+                    <p>Copyright 2023 - Now 
+                        <br>Powered by KaiZS
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- aplayer -->
+    <div id="aplayer-fixed" class="aplayer"></div>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./static/APlayer-1.10.1/dist/APlayer.min.js"></script>
+    <script src="./static/Meting.min.js"></script>
+    <!-- end_aplayer -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script defer src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./static/layer-v3.5.1/layer/layer.js"></script>
+
+    <script src="./static/main.js"></script>
+
+</html>
