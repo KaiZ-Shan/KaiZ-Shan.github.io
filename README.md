@@ -21,7 +21,8 @@
     let music_loop = "all"; // 音频循环播放, 可选值: 'all', 'one', 'none'
 ```
 
-###配置导航按钮
+### 配置导航按钮
+```javascript
     data-href="//www.kezez.com"  // 要打开的链接
     data-title="Blog"            // 标题
     data-window="pop"            // 窗口模式，可选：pop(弹窗显示) current(当前页打开) newtab(新标签页打开)
@@ -29,7 +30,7 @@
     data-area-w="80%"             // 窗口打开后所占的宽度
     data-area-h="90%"            // 窗口打开后所占的高度
     data-shade="false"           // 是否显示遮罩
-
+```
 ### 按钮颜色
 
 > 按钮颜色使用bootstraap4的颜色格式，只需要修改按钮对应的class类即可改变按钮颜色
