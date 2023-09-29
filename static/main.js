@@ -80,7 +80,7 @@ $.ajax({
   },
 });
 
-fetch('https://v1.hitokoto.cn')
+fetch('https://v1.hitokoto.cn/?c=d&encode=text')
     .then(response => response.json())
     .then(data => {
       const hitokoto = document.getElementById('hitokoto_text')
