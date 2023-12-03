@@ -55,25 +55,25 @@
                 <!-- 大标题 -->
                 <h1>KaiZs's Website</h1>
                 <!-- 标题下的一段话 -->
+                               <p id="hitokoto">
+                                  <a href="#" id="hitokoto_text">:D 获取中...</a>
+                                </p>
+                            <script>
+                                  fetch('https://v1.hitokoto.cn/?c=i')
+                                   .then(response => response.json())
+                                   .then(data => {
+                                  const hitokoto = document.querySelector('#hitokoto_text')
+                                  hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
+                                  hitokoto.innerText = data.hitokoto
+                               })
+                                    .catch(console.error)
+                            </script>
                 <p>
-                    很开心你能访问我的网站！</br>你好，今天又是美丽而充实的一天呢！你过得怎么样啊？:) </br>
+                    很开心你能访问我的网站！</br>你好，今天又是美丽而充实的一天呢！你过得怎么样啊？: ) </br>
                 <b>新版网站已经上线，点击下方链接即可进入。</b></br>
-                目前我仍在努力学习中，励志向着目标前行。</br>
-                下面是每日一言：      
+                目前我仍在努力学习中，励志向着目标前行。</br>      
                 </p>
-               <p id="hitokoto">
-  <a href="#" id="hitokoto_text">:D 获取中...</a>
-</p>
-<script>
-  fetch('https://v1.hitokoto.cn/?c=i')
-    .then(response => response.json())
-    .then(data => {
-      const hitokoto = document.querySelector('#hitokoto_text')
-      hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
-      hitokoto.innerText = data.hitokoto
-    })
-    .catch(console.error)
-</script>
+
                 <div class="container-fluid">
                     <div class="row">
                         <!-- 导航按钮组 -->
